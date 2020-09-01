@@ -16,8 +16,15 @@ package frc.robot;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
-    public static final int leftMasterId = 11; // placeholder
-    public static final int leftSlaveId = 12; // placeholder
-    public static final int rightMasterId = 13; // placeholder
-    public static final int rightSlaveId = 14; // placeholder
+    // drive constants
+    public static final int LEFT_MASTER = 0; // placeholder
+    public static final int RIGHT_MASTER = 1; // placeholder
+    public static final int LEFT_SLAVE = 2; // placeholder
+    public static final int RIGHT_SLAVE = 3; // placeholder
+
+    public static final double WHEEL_RADIUS_INCHES = 6;
+    public static final double WHEEL_RADIUS_METERS = 6 / 39.37; // convert inches to meters
+    public static final double GEAR_RATIO = 1; // placeholder, driving/driven
+    public static final double TICKS_PER_METER = (2048 / (WHEEL_RADIUS_METERS * Math.PI)) * GEAR_RATIO;
+    public static final double TICKS_PER_INCH = (2048 / (WHEEL_RADIUS_INCHES * Math.PI)) * GEAR_RATIO;
 }
