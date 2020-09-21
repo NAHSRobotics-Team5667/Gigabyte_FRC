@@ -1,2 +1,2 @@
 # Gigabyte_FRC
- A Global Positioning project for FRC team 5667 to make the robot smarter.
+ An offseason project to optimize and improve path following.
